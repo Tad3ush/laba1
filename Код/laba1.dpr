@@ -1,0 +1,30 @@
+program laba1;
+
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils,
+  StrUtils;
+
+var
+  i, x, y, k:integer;
+  j, z:string;
+begin
+  for i := 0 to 1000 do
+    begin
+      j := IntToStr(i);
+      j := reversestring(j);
+      x := StrToInt(j);
+      if x = i
+        then
+          begin
+            y := sqr(i);
+            z := IntToStr(y);
+            Z := reversestring(z);
+            k := StrToInt(z);
+            if k = y
+              then write(i, ',');
+          end;
+    end;
+  readln(i);
+end.
